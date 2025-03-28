@@ -2,7 +2,7 @@ import React from 'react'
 import { type IProjectCard } from '../interfaces/project.interface'
 
 import { ProyectList } from '../components/list/ProyectList'
-import { Slider } from '@/components/common/slider/Slider'
+import Slider from '@/components/common/slider/Slider'
 
 import proyectosData from '../data/proyectos.json'
 
