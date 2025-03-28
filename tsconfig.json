@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["node", "google.maps", "babel__traverse"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
