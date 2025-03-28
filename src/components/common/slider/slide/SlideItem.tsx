@@ -1,39 +1,38 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { type SlideProps } from '../interfaces/slider.interface'
+import { type Slide } from '../interfaces/slider.interface'
 
-interface ISlideItem {
-  slide: SlideProps
-  index?: number
-}
-
-const SlideItem: React.FC<ISlideItem> = (props) => {
-  const { url, image, title, description } = props.slide
-
+const SlideItem: React.FC<Slide> = ({ slide }) => {
   return (
-    <Link href={url}>
-      <div
-        className={`keen-slider__slide flex transition-opacity duration-200 cursor-pointer`}
+    <Link href={slide.url}>
+      <section
+        className={`keen-slider__slide flex cursor-pointer transition-opacity duration-200`}
       >
         <Image
-          src={image}
-          alt={`Imagen de ${title}`}
+          src={slide.image}
+          alt={`Imagen de ${slide.title}`}
           fill
-          className="object-center object-cover"
+          quality={100}
+          priority={true}
+          className="object-cover object-center"
         />
-        {title != null && description != null ? (
-          <div className="absolute inset-0 md:flex justify-end  flex-col w-full h-full p-4 hidden ">
-            <div className="px-10 mx-24 pb-4 ">
-              <div className="w-[65vh] bg-white px-10 py-2 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                <h1 className=" text-4xl font-bold my-5">{title}</h1>
-                <p className="text-base mb-7">{description}</p>
+
+        {/* Overlay for the image */}
+        {slide.title != null && slide.description != null ? (
+          <section className="absolute inset-0 hidden size-full flex-col justify-end p-4 md:flex">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#100e09] via-transparent to-transparent"></div>
+            <div className="relative z-10 mx-32">
+              <div className="w-[65vh] rounded-lg bg-white px-10 py-2 shadow-lg transition-transform duration-300 hover:scale-105">
+                <h1 className="my-5 text-4xl font-bold">{slide.title}</h1>
+                <p className="mb-7 text-base">{slide.description}</p>
               </div>
             </div>
-          </div>
+          </section>
         ) : null}
-      </div>
+      </section>
     </Link>
   )
 }

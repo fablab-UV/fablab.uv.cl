@@ -29,7 +29,7 @@ const UpcomingEventsModule: React.FC<UpcomingEventsModuleProps> = (props) => {
   const events: IEvent[] = UpcomingEventsData
 
   return (
-    <section className={`${className} w-full h-full`}>
+    <section className={`${className} size-full`}>
       {/*  Vista mediana (Escritorio) */}
       <Suspense fallback={<LoadingSpinner />}>
         <section className="hidden lg:block">

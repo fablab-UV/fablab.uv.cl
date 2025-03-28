@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import React from 'react'
 import Image from 'next/image'
 import headerData from '../../data/header/header-data.json'
@@ -7,10 +8,10 @@ const DesktopHeader: React.FC = () => {
   const { school, faculty, logoPath } = headerData
 
   return (
-    <div className="h-36 max-h-36 header-theme p-4">
-      <div className="flex h-full justify-between px-10 items-center mx-24">
+    <div className="header-theme h-36 max-h-36 p-4">
+      <div className="mx-24 flex h-full items-center justify-between px-10">
         <Link href="/">
-          <div className="relative h-24 w-64 flex ">
+          <div className="relative flex h-24 w-64">
             <Image
               alt="Logo Fablab"
               src={logoPath}
@@ -21,11 +22,11 @@ const DesktopHeader: React.FC = () => {
             (max-width: 1200px) 100vw,
             (max-width: 1800px) 80vw,
             2560px"
-              className="object-contain aspect-video"
+              className="aspect-video object-contain"
             />
           </div>
         </Link>
-        <div className="text-right flex flex-col justify-center h-full ">
+        <div className="flex h-full flex-col justify-center text-right">
           <h2 className="text-4xl font-bold">{school}</h2>
           <p className="text-2xl">{faculty}</p>
         </div>

@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 // TODO Revisar y estandarizar
 
 import React from 'react'
@@ -13,9 +14,9 @@ const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
 }) => {
   const spinnerSize = `${size}px`
   return (
-    <div className="flex items-center justify-center w-full h-full">
+    <div className="flex size-full items-center justify-center">
       <div
-        className={`animate-spin rounded-full border-t-4 border-${color}-500 border-opacity-50`}
+        className={`animate-spin rounded-full border-t-4 ${color}-500 border-black/50`}
         style={{ width: spinnerSize, height: spinnerSize }}
       ></div>
     </div>

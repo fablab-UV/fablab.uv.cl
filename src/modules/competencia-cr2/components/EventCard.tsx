@@ -17,36 +17,36 @@ const EventCard: React.FC<EventCardProps> = ({
   location
 }) => {
   return (
-    <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden p-8 h-[85vh]">
+    <div className="flex h-[85vh] flex-col overflow-hidden rounded-lg bg-white p-8 shadow-lg md:flex-row">
       {/* Imagen del evento */}
-      <div className="relative md:w-1/2 md:h-auto ">
+      <div className="relative md:h-auto md:w-1/2">
         <Image
           src={imageUrl}
           alt={title}
           layout="fill"
-          className="object-contain object-center "
+          className="object-contain object-center"
         />
       </div>
 
       {/* Contenido */}
-      <div className="hidden md:w-1/2 md:flex flex-col ">
+      <div className="hidden flex-col md:flex md:w-1/2">
         <div>
-          <p className="text-gray-600 text-base mb-6">{description}</p>
+          <p className="mb-6 text-base text-gray-600">{description}</p>
 
           <p className="font-bold">¿Qué experiencia vivirás?</p>
 
           {/* Lista de características */}
-          <ul className="mb-4  space-y-2 pt-6">
+          <ul className="mb-4 space-y-2 pt-6">
             <li className="flex items-center">
-              <span className="mr-2 text-pink-fluor">🤖</span> Competencia
+              <span className="text-pink-fluor mr-2">🤖</span> Competencia
               Performática Escolar de Robótica Regional
             </li>
             <li className="flex items-center">
-              <span className="mr-2 text-pink-fluor">🔍</span> Expo Ingeniería &
+              <span className="text-pink-fluor mr-2">🔍</span> Expo Ingeniería &
               Tecnología UV + Expo Póster de Arte Generativo
             </li>
             <li className="flex items-center">
-              <span className="mr-2 text-pink-fluor">🎶</span> Música,
+              <span className="text-pink-fluor mr-2">🎶</span> Música,
               Foodtrucks y la mejor energía para compartir
             </li>
           </ul>
@@ -56,7 +56,7 @@ const EventCard: React.FC<EventCardProps> = ({
             la tecnología!
           </span>
 
-          <p className="font-bold  mb-4">¡100% GRATIS 🚀!</p>
+          <p className="mb-4 font-bold">¡100% GRATIS 🚀!</p>
 
           <p>
             📍
@@ -67,8 +67,8 @@ const EventCard: React.FC<EventCardProps> = ({
 
         {/* Botón de acción */}
         <div className="pt-6">
-          <Button variant="default" className="w-full header-theme h-12">
-            <p className="text-xl p-4">Sé parte del gran día</p>
+          <Button variant="default" className="header-theme h-12 w-full">
+            <p className="p-4 text-xl">Sé parte del gran día</p>
           </Button>
         </div>
       </div>

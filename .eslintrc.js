@@ -9,7 +9,8 @@ module.exports = {
     'plugin:react/recommended',
     'next/core-web-vitals',
     'next',
-    'prettier'
+    'prettier',
+    'plugin:tailwindcss/recommended'
   ],
 
   overrides: [
@@ -27,6 +28,11 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint'],
-  rules: {}
+  plugins: ['react', '@typescript-eslint', 'tailwindcss'],
+  rules: {},
+  settings: {
+    tailwindcss: {
+      callees: ['classnames', 'clsx']
+    }
+  }
 }

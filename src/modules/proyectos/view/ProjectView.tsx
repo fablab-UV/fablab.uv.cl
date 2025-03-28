@@ -24,7 +24,7 @@ const ProyectView: React.FC<ProyectViewProps> = (props) => {
     <section className="min-h-screen pb-16">
       <Slider className="h-[65vh]" data={proyectosData} />
 
-      <section className="pt-8 px-8 flex">
+      <section className="flex px-8 pt-8">
         <LeftSidebar
           className="flex h-full pr-8"
           categories={uniqueCategories}

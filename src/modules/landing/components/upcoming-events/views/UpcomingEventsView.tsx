@@ -16,7 +16,7 @@ const UpcomingEventsView: React.FC<IUpcomingEventsViewProps> = (props) => {
   return (
     <section className={`${className}`}>
       <EventHeader className="px-14" />
-      <EventList className="mt-4 " events={events} />
+      <EventList className="mt-4" events={events} />
     </section>
   )
 }

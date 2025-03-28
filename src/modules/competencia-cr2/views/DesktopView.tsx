@@ -9,7 +9,7 @@ import { EventCard } from '../components/EventCard'
 const DesktopView: React.FC = () => {
   return (
     <div className="min-h-screen">
-      <section className="relative w-full h-[100vh]">
+      <section className="relative h-screen w-full">
         <Image
           src={competenciaData.image}
           alt={`Imagen de ${competenciaData.title}`}
@@ -18,9 +18,9 @@ const DesktopView: React.FC = () => {
         />
       </section>
 
-      <section className="pt-8 hidden lg:flex">
+      <section className="hidden pt-8 lg:flex">
         <div className="w-full">
-          <h2 className="md:text-2xl lg:text-4xl font-bold text-pink-fluor w-full h-full  text-center">
+          <h2 className="text-pink-fluor size-full text-center font-bold md:text-2xl lg:text-4xl">
             ¡EL EVENTO DE ROBÓTICA ÚNICO EN VALPARAÍSO, ESTÁ DE VUELTA!
           </h2>
         </div>

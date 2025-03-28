@@ -2,7 +2,11 @@
   {
     "name": "nosotros",
     "href": "/nosotros",
-    "subItems": [{ "name": "equipamiento", "href": "/nosotros" }]
+    "subItems": [
+      { "name": "¿Quiénes somos?", "href": "/nosotros" },
+      { "name": "Servicios", "href": "/nosotros/servicios" },
+      { "name": "Equipamiento", "href": "/nosotros/equipamiento" }
+    ]
   },
   {
     "name": "proyectos",
