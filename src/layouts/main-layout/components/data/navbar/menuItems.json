@@ -4,8 +4,8 @@
     "href": "/nosotros",
     "subItems": [
       { "name": "¿Quiénes somos?", "href": "/nosotros" },
-      { "name": "Servicios", "href": "/nosotros/servicios" },
-      { "name": "Equipamiento", "href": "/nosotros/equipamiento" }
+      { "name": "Servicios", "href": "/nosotros" },
+      { "name": "Equipamiento", "href": "/nosotros" }
     ]
   },
   {

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['via.placeholder.com'] // Permite cargar imágenes desde este dominio
+    domains: ['via.placeholder.com', 'dummyimage.com'] // Permite cargar imágenes desde este dominio
   },
   async headers() {
     return [

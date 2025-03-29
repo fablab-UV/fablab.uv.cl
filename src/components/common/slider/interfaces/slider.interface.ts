@@ -10,6 +10,6 @@ export interface Slide {
 export interface SlideContent {
   title?: string
   description?: string
-  url: string
+  url?: string
   image: string
 }
