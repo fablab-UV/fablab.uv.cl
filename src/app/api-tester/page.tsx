@@ -147,10 +147,10 @@ export default function ApiTester(): JSX.Element {
   }
 
   return (
-    <div className="flex justify-between gap-10 max-w-6xl mx-auto bg-white p-8 rounded-xl shadow-xl">
+    <div className="mx-auto flex max-w-6xl justify-between gap-10 rounded-xl bg-white p-8 shadow-xl">
       {/* Formulario a la izquierda */}
       <div className="w-1/2">
-        <h1 className="text-3xl font-semibold text-center mb-6">
+        <h1 className="mb-6 text-center text-3xl font-semibold">
           Prueba de Rutas de API
         </h1>
 
@@ -160,7 +160,7 @@ export default function ApiTester(): JSX.Element {
             onClick={() => {
               toggleAccordion('get')
             }}
-            className="w-full text-left px-5 py-3 bg-black text-white rounded-lg mb-3"
+            className="mb-3 w-full rounded-lg bg-black px-5 py-3 text-left text-white"
           >
             {isOpen.get ? 'GET' : 'GET'}
           </button>
@@ -173,13 +173,13 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setGetEventId(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <button
                 onClick={() => {
                   void handleRequest('GET')
                 }}
-                className="w-full px-5 py-3 bg-black text-white rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                className="w-full rounded-lg bg-black px-5 py-3 text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
               >
                 GET
               </button>
@@ -193,7 +193,7 @@ export default function ApiTester(): JSX.Element {
             onClick={() => {
               toggleAccordion('post')
             }}
-            className="w-full text-left px-5 py-3 bg-black text-white rounded-lg mb-3"
+            className="mb-3 w-full rounded-lg bg-black px-5 py-3 text-left text-white"
           >
             {isOpen.post ? 'POST' : 'POST'}
           </button>
@@ -206,7 +206,7 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPostTitle(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
@@ -215,7 +215,7 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPostDescription(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
@@ -224,13 +224,13 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPostImage(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <button
                 onClick={() => {
                   void handleRequest('POST')
                 }}
-                className="w-full px-5 py-3 bg-black text-white rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                className="w-full rounded-lg bg-black px-5 py-3 text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
               >
                 POST
               </button>
@@ -244,7 +244,7 @@ export default function ApiTester(): JSX.Element {
             onClick={() => {
               toggleAccordion('patch')
             }}
-            className="w-full text-left px-5 py-3 bg-black text-white rounded-lg mb-3"
+            className="mb-3 w-full rounded-lg bg-black px-5 py-3 text-left text-white"
           >
             {isOpen.patch ? 'PATCH' : 'PATCH'}
           </button>
@@ -257,7 +257,7 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPatchEventId(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
@@ -266,7 +266,7 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPatchTitle(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
@@ -275,7 +275,7 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPatchDescription(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
@@ -284,13 +284,13 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPatchImage(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <button
                 onClick={() => {
                   void handleRequest('PATCH')
                 }}
-                className="w-full px-5 py-3 bg-black text-white rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                className="w-full rounded-lg bg-black px-5 py-3 text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
               >
                 PATCH
               </button>
@@ -304,7 +304,7 @@ export default function ApiTester(): JSX.Element {
             onClick={() => {
               toggleAccordion('put')
             }}
-            className="w-full text-left px-5 py-3 bg-black text-white rounded-lg mb-3"
+            className="mb-3 w-full rounded-lg bg-black px-5 py-3 text-left text-white"
           >
             {isOpen.put ? 'PUT' : 'PUT'}
           </button>
@@ -317,7 +317,7 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPutEventId(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
@@ -326,7 +326,7 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPutTitle(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
@@ -335,7 +335,7 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPutDescription(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
@@ -344,13 +344,13 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setPutImage(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <button
                 onClick={() => {
                   void handleRequest('PUT')
                 }}
-                className="w-full px-5 py-3 bg-black text-white rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                className="w-full rounded-lg bg-black px-5 py-3 text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
               >
                 PUT
               </button>
@@ -364,7 +364,7 @@ export default function ApiTester(): JSX.Element {
             onClick={() => {
               toggleAccordion('delete')
             }}
-            className="w-full text-left px-5 py-3 bg-black text-white rounded-lg mb-3"
+            className="mb-3 w-full rounded-lg bg-black px-5 py-3 text-left text-white"
           >
             {isOpen.delete ? 'DELETE ' : 'DELETE'}
           </button>
@@ -377,13 +377,13 @@ export default function ApiTester(): JSX.Element {
                 onChange={(e) => {
                   setDeleteEventId(e.target.value)
                 }}
-                className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full p-3 mb-3"
+                className="mb-3 w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               />
               <button
                 onClick={() => {
                   void handleRequest('DELETE')
                 }}
-                className="w-full px-5 py-3 bg-black text-white rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                className="w-full rounded-lg bg-black px-5 py-3 text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
               >
                 DELETE
               </button>
@@ -393,8 +393,8 @@ export default function ApiTester(): JSX.Element {
       </div>
 
       {/* Respuesta de la API a la derecha */}
-      <div className="w-1/2 bg-gray-100 rounded-lg p-5">
-        <h2 className="text-xl font-semibold mb-4">Respuesta de la API:</h2>
+      <div className="w-1/2 rounded-lg bg-gray-100 p-5">
+        <h2 className="mb-4 text-xl font-semibold">Respuesta de la API:</h2>
         <pre>{response}</pre>
       </div>
     </div>

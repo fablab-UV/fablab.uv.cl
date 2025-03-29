@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 'use client'
 
 import React, { useState, useEffect } from 'react'
@@ -47,14 +48,14 @@ const EventList: React.FC<IEventListProps> = (props) => {
 
   return (
     <div className={`${className}`}>
-      <section ref={sliderRef} className=" keen-slider w-full">
+      <section ref={sliderRef} className="keen-slider w-full">
         {sortedEvents.map((event, index) => {
           return (
             <div
               key={index}
               className={`keen-slider__slide w-full ${index === 0 ? 'pl-4' : ''} ${index === sortedEvents.length - 1 ? 'pr-4' : ''}`}
             >
-              <EventCard event={event} className="h-full w-full" />
+              <EventCard event={event} className="size-full" />
             </div>
           )
         })}

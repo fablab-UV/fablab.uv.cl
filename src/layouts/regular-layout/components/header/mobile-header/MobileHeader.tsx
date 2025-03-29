@@ -2,9 +2,9 @@ import React from 'react'
 
 const MobileHeader: React.FC = () => {
   return (
-    <header className="text-gray-600 body-font bg-black">
-      <div className="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+    <header className="bg-black text-gray-600">
+      <div className="mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
+        <div className="mb-4 flex items-center font-medium text-gray-900 md:mb-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -12,20 +12,20 @@ const MobileHeader: React.FC = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
-            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            className="size-10 rounded-full bg-indigo-500 p-2 text-white"
             viewBox="0 0 24 24"
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
           <span className="ml-3 text-xl">Tailblocks</span>
         </div>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <nav className="flex flex-wrap items-center justify-center text-base md:ml-4 md:mr-auto md:border-l md:border-gray-400 md:py-1 md:pl-4">
           <a className="mr-5 hover:text-gray-900">First Link</a>
           <a className="mr-5 hover:text-gray-900">Second Link</a>
           <a className="mr-5 hover:text-gray-900">Third Link</a>
           <a className="mr-5 hover:text-gray-900">Fourth Link</a>
         </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <button className="mt-4 inline-flex items-center rounded border-0 bg-gray-100 px-3 py-1 text-base hover:bg-gray-200 focus:outline-none md:mt-0">
           Button
           <svg
             fill="none"
@@ -33,7 +33,7 @@ const MobileHeader: React.FC = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
-            className="w-4 h-4 ml-1"
+            className="ml-1 size-4"
             viewBox="0 0 24 24"
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>

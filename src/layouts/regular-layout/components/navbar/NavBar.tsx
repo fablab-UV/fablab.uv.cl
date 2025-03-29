@@ -71,7 +71,7 @@ const NavBar: React.FC = () => {
                       : 'h-65'
 
   return (
-    <nav className="bg-[#210a3e] h-[70px] flex items-center justify-between relative hidden lg:flex px-[170px] z-20">
+    <nav className="relative z-20 hidden h-[70px] items-center justify-between bg-[#210a3e] px-[170px] lg:flex">
       {/* Comienza la barra de navegación */}
       <div className="flex items-center">
         {/* Mapea los ítems del menú y crea un botón para cada uno */}
@@ -86,8 +86,7 @@ const NavBar: React.FC = () => {
           >
             <Button
               variant="secondary" // Variante del botón.
-              className={`px-[40px] h-[70px] rounded-none
-                ${hoveredItem === item.name || selectedItem === item.name ? ' !bg-white text-[#210a3e]' : 'bg-[#210a3e] text-white'}`}
+              className={`h-[70px] rounded-none px-[40px] ${hoveredItem === item.name || selectedItem === item.name ? '!bg-white text-[#210a3e]' : 'bg-[#210a3e] text-white'}`}
               onClick={() => {
                 handleItemClick(item.name)
               }} // Maneja el clic en el botón.
@@ -97,13 +96,13 @@ const NavBar: React.FC = () => {
             </Button>
             {/* Muestra los subítems si el ítem está siendo hovered */}
             {hoveredItem === item.name && item.subItems != null && (
-              <div className="absolute left-0 right-0 top-[70px] bg-white z-20">
+              <div className="absolute inset-x-0 top-[70px] z-20 bg-white">
                 <div className="flex flex-col">
                   {/* Mapea los subítems y crea un enlace para cada uno */}
                   {item.subItems.map((subItem) => (
                     <Link key={subItem.name} href={subItem.href} passHref>
-                      <div className="flex justify-start px-4 py-6 cursor-pointer z-10 whitespace-nowrap">
-                        <span className="text-[#210a3e] hover:text-[#0d0d0d] transition-colors duration-300 hover:font-bold text-xs ml-6">
+                      <div className="z-10 flex cursor-pointer justify-start whitespace-nowrap px-4 py-6">
+                        <span className="ml-6 text-xs text-[#210a3e] transition-colors duration-300 hover:font-bold hover:text-[#0d0d0d]">
                           {subItem.name.toUpperCase()}{' '}
                           {/* Muestra el nombre del subítem en mayúsculas */}
                         </span>
@@ -118,10 +117,10 @@ const NavBar: React.FC = () => {
       </div>
       {/* Muestra la barra de separación y el contenedor de subítems si hay un ítem hovered */}
       {hoveredItem != null && currentItem?.subItems != null && (
-        <div className="absolute top-[70px] inset-x-0 z-10 bg-white">
+        <div className="absolute inset-x-0 top-[70px] z-10 bg-white">
           <div className={`${heightClass}`} />{' '}
           {/* Clase de altura dinámica basada en la cantidad de subítems */}
-          <div className="h-[1px] bg-gray-300" /> {/* Línea final */}
+          <div className="h-px bg-gray-300" /> {/* Línea final */}
         </div>
       )}
     </nav>

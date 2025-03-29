@@ -14,7 +14,7 @@ const LeftSidebar: React.FC<LeftSidebarProps> = (props) => {
         {categories.map((category, index) => (
           <div
             key={index}
-            className="text-slate-600 pb-2 cursor-pointer hover:underline"
+            className="cursor-pointer pb-2 text-slate-600 hover:underline"
           >
             {category}
           </div>

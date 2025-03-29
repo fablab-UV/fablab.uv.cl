@@ -1,0 +1,23 @@
+[
+  {
+    "image": "/assets/img/nosotros/equipamiento-destacado/fabricacion-digital.webp",
+    "title": "Fabricación Digital",
+    "description": "La fabricación digital engloba un conjunto de tecnologías avanzadas que permiten diseñar y producir objetos con gran precisión y eficiencia. Gracias a procesos automatizados y herramientas de alta tecnología, es posible materializar ideas de manera rápida y personalizada, optimizando tiempos y recursos. Estas técnicas son clave en sectores como el diseño, la ingeniería, la arquitectura y la manufactura, facilitando la creación de prototipos, piezas funcionales y productos finales con alta calidad y detalle.",
+    "link": "#",
+    "color": "#210A3E"
+  },
+  {
+    "image": "/assets/img/nosotros/equipamiento-destacado/digitalizacion.webp",
+    "title": "Digitalización",
+    "description": "La digitalización transforma objetos físicos en modelos virtuales, permitiendo su análisis, modificación y reproducción en entornos digitales. Esta tecnología es esencial en campos como la ingeniería inversa, la preservación del patrimonio, la manufactura y el diseño, ya que facilita la creación de réplicas exactas y el desarrollo de soluciones personalizadas. A través de herramientas avanzadas, es posible capturar formas tridimensionales con gran precisión y generar modelos digitales listos para su procesamiento en diversas aplicaciones.",
+    "link": "#",
+    "color": "#6C1B52"
+  },
+  {
+    "image": "/assets/img/nosotros/equipamiento-destacado/realidad-virtual.webp",
+    "title": "Realidad Virtual",
+    "description": "La realidad virtual ofrece experiencias inmersivas que permiten simular entornos y situaciones con un alto nivel de realismo. Esta tecnología se utiliza en múltiples áreas, desde el entretenimiento y el diseño hasta la formación y la simulación de procesos industriales. Al interactuar con espacios digitales en 360 grados, los usuarios pueden visualizar, experimentar y mejorar proyectos de manera intuitiva, optimizando la toma de decisiones y la comprensión de conceptos complejos en diversos ámbitos.",
+    "link": "#",
+    "color": "#AE3E56"
+  }
+]

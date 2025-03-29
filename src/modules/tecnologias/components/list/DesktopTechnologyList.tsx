@@ -9,9 +9,9 @@ interface TechnologyListProps {
 
 const MediumTechnologyList: React.FC<TechnologyListProps> = (props) => {
   return (
-    <div className="flex flex-wrap justify-start ">
+    <div className="flex flex-wrap justify-start">
       {props.technologies.map((tech, index) => (
-        <div key={index} className="w-1/2 lg:w-1/3 2xl:w-1/4 3xl:w-1/5 ">
+        <div key={index} className="3xl:w-1/5 w-1/2 lg:w-1/3 2xl:w-1/4">
           <DesktopTechnologyCard
             titulo={tech.titulo}
             descripcion={tech.descripcion}
