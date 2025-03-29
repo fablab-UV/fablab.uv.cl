@@ -20,11 +20,11 @@ const ProjectCard: React.FC<IProjectCardProps> = (props) => {
         <img
           src={img}
           alt={title}
-          className="w-full object-cover rounded-lg min-h-48 max-h-48"
+          className="max-h-48 min-h-48 w-full rounded-lg object-cover"
         />
         <div className="pt-1">
-          <h2 className="font-medium text-md md:text-lg mb-1">{title}</h2>
-          <p className="text-sm lg:text-md">{description}</p>
+          <h2 className="mb-1 font-medium md:text-lg">{title}</h2>
+          <p className="text-sm">{description}</p>
         </div>
       </section>
     </Link>

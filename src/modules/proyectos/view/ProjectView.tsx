@@ -2,7 +2,7 @@ import React from 'react'
 import { type IProjectCard } from '../interfaces/project.interface'
 
 import { ProyectList } from '../components/list/ProyectList'
-import { Slider } from '@/components/common/slider/Slider'
+import Slider from '@/components/common/slider/Slider'
 
 import proyectosData from '../data/proyectos.json'
 
@@ -24,7 +24,7 @@ const ProyectView: React.FC<ProyectViewProps> = (props) => {
     <section className="min-h-screen pb-16">
       <Slider className="h-[65vh]" data={proyectosData} />
 
-      <section className="pt-8 px-8 flex">
+      <section className="flex px-8 pt-8">
         <LeftSidebar
           className="flex h-full pr-8"
           categories={uniqueCategories}

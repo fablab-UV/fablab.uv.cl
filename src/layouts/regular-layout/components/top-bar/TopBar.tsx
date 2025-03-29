@@ -27,14 +27,14 @@ const TopBar: React.FC = () => {
   const links: LinkInterface[] = linksData.links
   const icons = iconsData.icons
   return (
-    <div className="top-bar py-4 p-4">
-      <div className="flex flex-col md:flex-row justify-between items-center max-h-4 mx-24 px-10">
-        <div className="flex flex-wrap space-x-4 mb-4 md:mb-0">
+    <div className="top-bar p-4">
+      <div className="mx-24 flex max-h-4 flex-col items-center justify-between px-10 md:flex-row">
+        <div className="mb-4 flex flex-wrap space-x-4 md:mb-0">
           {links.map((link, index) => (
             <a
               key={index}
               href={link.url}
-              className="font-medium no-underline text-sm hover:text-gray-400"
+              className="text-sm font-medium no-underline hover:text-gray-400"
             >
               {link.name}
             </a>
