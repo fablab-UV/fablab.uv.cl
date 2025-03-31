@@ -6,7 +6,7 @@ import equipamientoDestacadoData from '../components/equipamiento/data/categoria
 const EquipamientoDestacado: React.FC = () => {
   return (
     <section className="">
-      <section className="mx-36 px-2">
+      <section className="px-8 xl:px-16 2xl:px-20">
         <div className="flex flex-col">
           {/* Contenido del header */}
           <div className="flex flex-col flex-wrap pb-8 sm:flex-row">

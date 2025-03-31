@@ -3,10 +3,10 @@ import React from 'react'
 const Videos: React.FC = () => {
   return (
     <section className="">
-      <div className="mx-36 px-2 py-12">
-        <div className="-mx-4 -mb-10 flex flex-wrap text-center">
+      <div className="px-8 pb-12 xl:px-16 2xl:px-20">
+        <div className="flex flex-wrap gap-2 text-center">
           {/* Video 1 */}
-          <div className="mb-10 px-4 sm:w-1/2">
+          <div className="flex-1">
             <div className="h-80 overflow-hidden rounded-lg">
               <iframe
                 className="size-full"
@@ -19,7 +19,7 @@ const Videos: React.FC = () => {
           </div>
 
           {/* Video 2 */}
-          <div className="mb-10 px-4 sm:w-1/2">
+          <div className="flex-1">
             <div className="h-80 overflow-hidden rounded-lg">
               <iframe
                 className="size-full"

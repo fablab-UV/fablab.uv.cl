@@ -124,4 +124,4 @@ const NavBar: React.FC = () => {
   )
 }
 
-export default NavBar // Exporta el componente NavBar para que pueda ser utilizado en otros lugares.
+export default NavBar
