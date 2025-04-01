@@ -40,7 +40,7 @@ const services: Service[] = [
 const QuienesSomosFablabUV: React.FC = () => {
   return (
     <div className="bg-white">
-      <div className="mx-36 px-2">
+      <div className="px-8 xl:px-16 2xl:px-20">
         <div className="flex flex-1 pb-8 text-center md:text-left">
           {/* Contenedor de la imagen */}
           <div className="relative w-full flex-1 overflow-hidden rounded-md shadow-lg">

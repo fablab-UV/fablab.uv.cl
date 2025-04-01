@@ -83,8 +83,8 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <section className="body-font relative text-gray-600">
-      <div className="container mx-auto flex flex-wrap px-5 py-16 sm:flex-nowrap">
+    <section className="relative">
+      <div className="flex flex-wrap px-8 pb-12 sm:flex-nowrap xl:px-16 2xl:px-20">
         {/* Mapa de Google en la sección izquierda */}
         <div className="relative mt-1.5 flex h-[565px] items-end justify-start overflow-hidden rounded-lg bg-gray-300 p-0 sm:mr-10 md:w-1/2 lg:w-2/3">
           <iframe
