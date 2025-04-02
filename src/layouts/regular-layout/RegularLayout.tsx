@@ -16,7 +16,7 @@ interface RootLayoutProps {
 const RegularLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <>
-      <header className="hidden md:block">
+      <header className=" md:block">
         <TopBar />
         <NavBar />
       </header>

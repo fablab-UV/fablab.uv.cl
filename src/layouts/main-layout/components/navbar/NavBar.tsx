@@ -1,124 +1,116 @@
 'use client'
 
-import React, { useState } from 'react' // Importa React y el hook useState.
-import Link from 'next/link' // Importa el componente Link de Next.js para la navegación.
-import { Button } from '@/components/ui/button' // Importa un componente Button personalizado.
-import menuItems from '@/layouts/main-layout/components/data/navbar/menuItems.json' // Importa los ítems del menú desde un archivo JSON.
+import React, { useState } from 'react'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import menuItems from '@/data/menuItems.json'
 
 const NavBar: React.FC = () => {
   if (menuItems.length > 7) {
     throw new Error('El menú no puede tener más de 7 ítems.')
   }
 
-  // Define el estado para el ítem actualmente en hover y el ítem seleccionado.
   const [hoveredItem, setHoveredItem] = useState<string | null>(null)
-  const [selectedItem, setSelectedItem] = useState<string | null>(null)
-  let timeoutId: NodeJS.Timeout // Variable para manejar el temporizador.
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  let timeoutId: NodeJS.Timeout
 
-  // Maneja el evento de mouse al entrar en un ítem.
   const handleMouseEnter = (item: string): void => {
-    clearTimeout(timeoutId) // Limpia el temporizador previo para evitar retrasos.
-    setHoveredItem(item) // Establece el ítem que está siendo hovered.
+    clearTimeout(timeoutId)
+    setHoveredItem(item)
   }
 
-  // Maneja el evento de mouse al salir de un ítem.
   const handleMouseLeave = (): void => {
-    // Establece un temporizador para cambiar el estado de hoveredItem después de 300 ms.
     timeoutId = setTimeout(() => {
       setHoveredItem(null)
     }, 300)
   }
 
-  // Maneja el evento al hacer clic en un ítem.
-  const handleItemClick = (item: string): void => {
-    setSelectedItem(item) // Establece el ítem seleccionado.
-  }
-
-  // Encuentra el ítem actual basado en el hoveredItem.
-  const currentItem = menuItems.find((item) => item.name === hoveredItem)
-
-  // Se asegura de que subItems nunca sea undefined.
-  const subItems = currentItem?.subItems ?? []
-
-  // Comprueba si hay más de 9 subítems en el ítem actual y lanza un error si es así.
-  if (subItems.length > 9) {
-    throw new Error('No se pueden tener más de 9 subítems en un ítem del menú.')
-  }
-
-  // Establece la clase de altura en base a la cantidad de subítems.
-  const heightClass =
-    subItems.length === 1
-      ? 'h-[65px]'
-      : subItems.length === 2
-        ? 'h-[130px]'
-        : subItems.length === 3
-          ? 'h-[195px]'
-          : subItems.length === 4
-            ? 'h-[260px]'
-            : subItems.length === 5
-              ? 'h-[325px]'
-              : subItems.length === 6
-                ? 'h-[390px]'
-                : subItems.length === 7
-                  ? 'h-[455px]'
-                  : subItems.length === 8
-                    ? 'h-[520px]'
-                    : subItems.length === 9
-                      ? 'h-[585px]'
-                      : 'h-65'
-
   return (
-    <nav className="relative z-20 hidden h-[70px] items-center justify-between bg-[#210a3e] px-[170px] lg:flex">
-      {/* Comienza la barra de navegación */}
-      <div className="flex items-center">
-        {/* Mapea los ítems del menú y crea un botón para cada uno */}
-        {menuItems.map((item) => (
-          <div
-            key={item.name} // Asigna una clave única a cada ítem.
-            onMouseEnter={() => {
-              handleMouseEnter(item.name)
-            }} // Maneja el evento de hover.
-            onMouseLeave={handleMouseLeave} // Maneja el evento de salir del hover.
-            className="relative" // Clase para el posicionamiento relativo.
-          >
-            <Button
-              variant="secondary" // Variante del botón.
-              className={`h-[70px] rounded-none px-[40px] ${hoveredItem === item.name || selectedItem === item.name ? '!bg-white text-[#210a3e]' : 'bg-[#210a3e] text-white'}`}
-              onClick={() => {
-                handleItemClick(item.name)
-              }} // Maneja el clic en el botón.
+    <nav className="header-theme relative z-20 flex h-[70px] items-center justify-between px-4 md:px-10">
+      <div className="flex w-full items-center">
+        {/* Botón de hamburguesa */}
+        <button
+          className="ml-auto flex flex-col items-center justify-center gap-1 rounded-md border-none p-2 md:hidden"
+          onClick={() => { setIsMenuOpen(!isMenuOpen); }}
+        >
+          <div className="h-0.5 w-6 bg-white"></div>
+          <div className="h-0.5 w-6 bg-white"></div>
+          <div className="h-0.5 w-6 bg-white"></div>
+        </button>
+
+        {/* Menú principal */}
+        <div className="mx-auto hidden md:flex">
+          {menuItems.map((item) => (
+            <div
+              key={item.name}
+              onMouseEnter={() => { handleMouseEnter(item.name); }}
+              onMouseLeave={handleMouseLeave}
+              className="group relative"
             >
-              <Link href={item.href}>{item.name.toUpperCase()}</Link>{' '}
-              {/* Enlaza al ítem. */}
-            </Button>
-            {/* Muestra los subítems si el ítem está siendo hovered */}
-            {hoveredItem === item.name && item.subItems != null && (
-              <div className="absolute inset-x-0 top-[70px] z-20 bg-white">
-                <div className="flex flex-col">
-                  {/* Mapea los subítems y crea un enlace para cada uno */}
+              <Link href={item.href}>
+                <Button className="group h-[70px] rounded-none border-none bg-[#210a3e] text-white shadow-none hover:bg-white hover:text-[#0d0d0d]">
+                  <span className="transition-transform duration-200 ease-in-out group-hover:scale-110">
+                    {item.name.toUpperCase()}
+                  </span>
+                </Button>
+              </Link>
+
+
+              {(item.subItems != null) && hoveredItem === item.name && (
+  <>
+                {/* Barra blanca que cubre toda la pantalla y se alinea con los subitems */}
+                <div 
+                  className="fixed left-0 z-40 hidden w-screen bg-white transition-all duration-200 ease-in-out md:block"
+                  style={{ top: "260px", height: `${item.subItems.length * 60}px` }}
+                ></div>
+
+                {/* Contenedor de los subitems */}
+                <div className="absolute left-0 top-full z-50 mt-3 hidden w-screen bg-white md:block">
                   {item.subItems.map((subItem) => (
-                    <Link key={subItem.name} href={subItem.href} passHref>
-                      <div className="z-10 flex cursor-pointer justify-start whitespace-nowrap px-4 py-6">
-                        <span className="ml-6 text-xs text-[#210a3e] transition-colors duration-300 hover:font-bold hover:text-[#0d0d0d]">
-                          {subItem.name.toUpperCase()}{' '}
-                          {/* Muestra el nombre del subítem en mayúsculas */}
-                        </span>
+                    <Link key={subItem.name} href={subItem.href}>
+                      <div className="cursor-pointer  p-2 py-4 text-left text-sm text-[#210a3e] hover:bg-gray-100">
+                        {subItem.name.toUpperCase()}
                       </div>
                     </Link>
                   ))}
                 </div>
-              </div>
+              </>
             )}
-          </div>
-        ))}
-      </div>
-      {/* Muestra la barra de separación y el contenedor de subítems si hay un ítem hovered */}
-      {hoveredItem != null && currentItem?.subItems != null && (
-        <div className="absolute inset-x-0 top-[70px] z-10 bg-white">
-          <div className={`${heightClass}`} />{' '}
-          {/* Clase de altura dinámica basada en la cantidad de subítems */}
-          <div className="h-px bg-gray-300" /> {/* Línea final */}
+
+
+              
+            </div>
+          ))}
         </div>
+      </div>
+      {/* Menú desplegable en mobile */}
+      {isMenuOpen && (
+        <div className="absolute inset-x-0 top-[70px] flex flex-col bg-white shadow-md md:hidden">
+          {menuItems.map((item) => (
+            <div key={item.name} className="border-b border-gray-300">
+              <Link href={item.href}>
+                <div className="p-4 text-center text-[#210a3e] hover:bg-gray-400">
+                  {item.name.toUpperCase()}
+                </div>
+              </Link>
+              {/* Submenú en mobile */}
+              {(item.subItems != null) && (
+                <div className="flex flex-col bg-gray-200">
+                  {item.subItems.map((subItem) => (
+                    <Link key={subItem.name} href={subItem.href}>
+                      <div className="cursor-pointer p-3 pl-6 text-left text-[#210a3e] hover:bg-gray-400">
+                        {subItem.name.toUpperCase()}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+          <div className='h-px bg-[#210a3e]'>    
+          </div>
+        </div>
+    
       )}
     </nav>
   )
