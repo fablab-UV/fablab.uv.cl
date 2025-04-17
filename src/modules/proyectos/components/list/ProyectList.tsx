@@ -16,7 +16,7 @@ const ProyectList: React.FC<ProyectListProps> = (props) => {
       className={`${className} grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3`}
     >
       {projects.map((project, index) => (
-        <div key={index} className="">
+        <div key={index}>
           <ProjectCard project={project} />
         </div>
       ))}

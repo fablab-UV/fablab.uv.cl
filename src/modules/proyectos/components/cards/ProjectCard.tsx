@@ -15,18 +15,18 @@ const ProjectCard: React.FC<IProjectCardProps> = (props) => {
   const { title, description, img, href } = project
 
   return (
-    <Link className={`${className}`} href={href}>
-      <section className="">
+    <Link className={`${className} `} href={href}>
+      <div className="flex h-full flex-1 flex-col rounded-lg transition-shadow duration-300 hover:shadow-lg">
         <img
           src={img}
           alt={title}
-          className="max-h-48 min-h-48 w-full rounded-lg object-cover"
+          className="h-52 w-full rounded-t-lg bg-black object-cover"
         />
-        <div className="pt-1">
+        <div className="p-3">
           <h2 className="mb-1 font-medium md:text-lg">{title}</h2>
           <p className="text-sm">{description}</p>
         </div>
-      </section>
+      </div>
     </Link>
   )
 }
