@@ -8,7 +8,7 @@ import slideData from './data/carouselData.json'
 
 import 'keen-slider/keen-slider.min.css'
 import Contact from '@/modules/contacts/Contact'
-import { UpcomingEventsModule } from './components/upcoming-events/UpcomingEventsModule'
+import ListarProximosEventos from './components/listar-proximos-eventos/ListarProximosEventos'
 
 import HoverScalingCarousel from './components/noticias-destacadas/NoticiasDestacadas'
 
@@ -17,7 +17,7 @@ const LandingModule: React.FC = () => {
     <MainLayout>
       <div className="w-full">
         <Slider className="md:h-[45vh] lg:h-[65vh]" data={slideData} />
-        <UpcomingEventsModule className="bg-[#210a3e] py-6 text-white" />
+        <ListarProximosEventos className="bg-[#210a3e] py-6 text-white" />
         <HoverScalingCarousel />
 
         <Contact />

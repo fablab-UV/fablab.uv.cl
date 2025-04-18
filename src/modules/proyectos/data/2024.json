@@ -1,89 +1,87 @@
-{
-  "proyectos-cards": [
-    {
-      "id": "1",
-      "nombre": "LearnHorizon",
-      "descripcion": "Plataforma educativa desarrollada utilizando Next.js, NestJS y MongoDB, que integra modelos 3D y artículos para un aprendizaje interactivo y dinámico.",
-      "repositorio_url": "https://github.com/FabLab-Projects/LearnHorizon",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2024-01-01T00:00:00.000Z",
-      "tecnologias": ["Educación", "Desarrollo Full Stack", "Tecnología"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Plataforma Educativa", "Next.js", "MongoDB"],
-      "contribuidores": ["FabLab-Projects"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "2",
-      "nombre": "FabLab UV Website",
-      "descripcion": "Proyecto de desarrollo y mantenimiento de la página oficial del FabLab de la Universidad de Valparaíso, empleando tecnologías como Next.js y TailwindCSS.",
-      "repositorio_url": "https://github.com/fablab-UV/fablab-WEB",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2024-01-01T00:00:00.000Z",
-      "tecnologias": ["Desarrollo Web", "Institucional", "Tecnología"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Página Web", "Next.js", "TailwindCSS"],
-      "contribuidores": ["FabLab-UV"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "3",
-      "nombre": "Dental Articulator Design",
-      "descripcion": "Diseño de articuladores dentales basados en modelos antiguos, impresos en 3D, para prácticas educativas en odontología. Incluye articulación funcional y simulación de morfologías mandibulares.",
-      "repositorio_url": "https://github.com/v3c70rCR/dental-articulator",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2024-09-15T00:00:00.000Z",
-      "tecnologias": ["Salud", "Educación", "Diseño 3D"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Odontología", "Diseño 3D", "Impresión 3D"],
-      "contribuidores": ["v3c70rCR"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "4",
-      "nombre": "Continuum Robot for Exploration",
-      "descripcion": "Diseño de un robot flexible inspirado en la columna vertebral humana, utilizando impresión 3D y silicona. El robot permite exploración en terrenos complejos y es controlado mediante señales EMG.",
-      "repositorio_url": "https://github.com/Erj5/Continuum-Robot",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2024-10-27T00:00:00.000Z",
-      "tecnologias": ["Robótica", "Exploración", "Tecnología"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Robótica", "Exploración", "EMG"],
-      "contribuidores": ["Erj5"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "5",
-      "nombre": "ProyectoRobotContinuo3",
-      "descripcion": "Proyecto de diseño de un robot continuo basado en señales EMG para exploración en terrenos complejos. Utiliza nodos de silicona y piezas rígidas impresas en 3D para adaptarse a entornos dinámicos.",
-      "repositorio_url": "https://github.com/FabLab-Projects/ProyectoRobotContinuo3",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2024-11-05T00:00:00.000Z",
-      "tecnologias": ["Robótica", "Exploración", "Interacción Humano-Máquina"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Robótica", "Exploración", "EMG"],
-      "contribuidores": ["FabLab-Projects"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
+[
+  {
+    "id": "1",
+    "nombre": "LearnHorizon",
+    "descripcion": "Plataforma educativa desarrollada utilizando Next.js, NestJS y MongoDB, que integra modelos 3D y artículos para un aprendizaje interactivo y dinámico.",
+    "repositorio_url": "https://github.com/FabLab-Projects/LearnHorizon",
+    "imagen": "https://via.placeholder.com/720x400",
+    "fecha_creacion": "2024-01-01T00:00:00.000Z",
+    "tecnologias": ["Educación", "Desarrollo Full Stack", "Tecnología"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Plataforma Educativa", "Next.js", "MongoDB"],
+    "contribuyentes": ["FabLab-Projects"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
     }
-  ]
-}
+  },
+  {
+    "id": "2",
+    "nombre": "FabLab UV Website",
+    "descripcion": "Proyecto de desarrollo y mantenimiento de la página oficial del FabLab de la Universidad de Valparaíso, empleando tecnologías como Next.js y TailwindCSS.",
+    "repositorio_url": "https://github.com/fablab-UV/fablab-WEB",
+    "imagen": "/assets/img/proyectos/2024/imagen-fablab-web.webp",
+    "fecha_creacion": "2024-06-21T00:00:00.000Z",
+    "tecnologias": ["Desarrollo Web", "Institucional", "Tecnología"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Página Web", "Next.js", "TailwindCSS"],
+    "contribuyentes": ["FabLab-UV"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  },
+  {
+    "id": "3",
+    "nombre": "Dental Articulator Design",
+    "descripcion": "Diseño de articuladores dentales basados en modelos antiguos, impresos en 3D, para prácticas educativas en odontología. Incluye articulación funcional y simulación de morfologías mandibulares.",
+    "repositorio_url": "https://github.com/v3c70rCR/dental-articulator",
+    "imagen": "/assets/img/proyectos/2024/imagen-dentalarticulador.webp",
+    "fecha_creacion": "2024-09-15T00:00:00.000Z",
+    "tecnologias": ["Salud", "Educación", "Diseño 3D"],
+    "estado_proyecto": "Finalizado",
+    "etiquetas": ["Odontología", "Diseño 3D", "Impresión 3D"],
+    "contribuyentes": ["v3c70rCR"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  },
+  {
+    "id": "4",
+    "nombre": "Continuum Robot for Exploration",
+    "descripcion": "Diseño de un robot flexible inspirado en la columna vertebral humana, utilizando impresión 3D y silicona. El robot permite exploración en terrenos complejos y es controlado mediante señales EMG.",
+    "repositorio_url": "https://github.com/Erj5/Continuum-Robot",
+    "imagen": "/assets/img/proyectos/2024/imagen-continuum-robot.webp",
+    "fecha_creacion": "2024-10-27T00:00:00.000Z",
+    "tecnologias": ["Robótica", "Exploración", "Tecnología"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Robótica", "Exploración", "EMG"],
+    "contribuyentes": ["Erj5"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  },
+  {
+    "id": "5",
+    "nombre": "ProyectoRobotContinuo3",
+    "descripcion": "Proyecto de diseño de un robot continuo basado en señales EMG para exploración en terrenos complejos. Utiliza nodos de silicona y piezas rígidas impresas en 3D para adaptarse a entornos dinámicos.",
+    "repositorio_url": "https://github.com/FabLab-Projects/ProyectoRobotContinuo3",
+    "imagen": "/assets/img/proyectos/2024/imagen-robot-continuo-3.webp",
+    "fecha_creacion": "2024-11-05T00:00:00.000Z",
+    "tecnologias": ["Robótica", "Exploración", "Interacción Humano-Máquina"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Robótica", "Exploración", "EMG"],
+    "contribuyentes": ["FabLab-Projects"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  }
+]

@@ -3,7 +3,7 @@ import { MapPinIcon } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 
-import { type IEvent } from '@/interfaces/events/event.interface'
+import { type IEvent } from '@/modules/landing/components/listar-proximos-eventos/interfaces/evento.interface'
 import { Separator } from '@/components/ui/separator'
 
 interface IEventCardProps {

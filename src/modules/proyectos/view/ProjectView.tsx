@@ -1,7 +1,7 @@
 import React from 'react'
-import { type IProjectCard } from '../interfaces/project.interface'
+import { type Proyecto } from '../interfaces/proyecto.interface'
 
-import { ProyectList } from '../components/list/ProyectList'
+import ListarProyectos from '../components/list/ListarProyectos'
 // import Slider from '@/components/common/slider/Slider'
 
 // import proyectosData from '../data/proyectos.json'
@@ -10,14 +10,13 @@ import { ProyectList } from '../components/list/ProyectList'
 // import { getUniqueCategories } from '../utils/getUniqueCategories'
 
 interface ProyectViewProps {
-  proyectos: IProjectCard[]
+  proyectos: Proyecto[]
 }
 
 const ProyectView: React.FC<ProyectViewProps> = (props) => {
   const { proyectos } = props
 
   // const categories = proyectos.map((proyecto) => proyecto.category)
-
   // const uniqueCategories = getUniqueCategories(categories)
 
   return (
@@ -25,12 +24,8 @@ const ProyectView: React.FC<ProyectViewProps> = (props) => {
       {/* <Slider className="md:h-[45vh] lg:h-[48vh]" data={proyectosData} /> */}
       <section className="flex flex-col px-8 pt-8 xl:px-16 2xl:px-20">
         <h1 className="text-2xl font-bold text-primary md:text-3xl lg:text-4xl">
-          Proyectos
+          Nuestros Proyectos
         </h1>
-        <p className="mt-2 text-lg md:text-xl lg:text-xl">
-          Aquí puedes ver los proyectos todos los proyectos realizados por el
-          FabLab UV
-        </p>
       </section>
 
       <section className="flex px-8 pt-8 xl:px-16 2xl:px-20">
@@ -38,7 +33,7 @@ const ProyectView: React.FC<ProyectViewProps> = (props) => {
           className="flex h-full pr-8"
           categories={uniqueCategories}
         /> */}
-        <ProyectList projects={proyectos} />
+        <ListarProyectos proyectos={proyectos} />
       </section>
     </section>
   )

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "titulo": "Introducción a Arduino",
+    "descripcion": "Taller básico de Arduino para aprender electrónica.",
+    "es_publico": true,
+    "categoria": "Taller",
+    "ubicacion": "General Cruz 222 · Valparaíso",
+    "institucion": "FabLab UV",
+    "fecha_evento": "2024-04-25T12:00:00.000Z",
+    "enlace_inscripcion": "https://www.example.com/inscripcion"
+  },
+  {
+    "id": "2",
+    "titulo": "Gestión de proyectos con Git",
+    "descripcion": "Aprende a manejar el control de versiones con Git.",
+    "es_publico": true,
+    "categoria": "Taller",
+    "ubicacion": "General Cruz 222 · Valparaíso",
+    "institucion": "FabLab UV",
+    "fecha_evento": "2024-04-24T12:00:00.000Z",
+    "enlace_inscripcion": null
+  },
+  {
+    "id": "3",
+    "titulo": "Impresión 3D",
+    "descripcion": "Taller de impresión 3D para proyectos de fabricación digital.",
+    "es_publico": true,
+    "categoria": "Taller",
+    "ubicacion": "General Cruz 222 · Valparaíso",
+    "institucion": "FabLab UV",
+    "fecha_evento": "2024-04-23T12:00:00.000Z",
+    "enlace_inscripcion": "https://www.example.com/inscripcion"
+  }
+]

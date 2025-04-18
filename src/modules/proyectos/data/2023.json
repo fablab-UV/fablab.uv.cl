@@ -1,127 +1,125 @@
-{
-  "proyectos-cards": [
-    {
-      "id": "1",
-      "nombre": "Beyond The Scope",
-      "descripcion": "Simulador de realidad virtual que permite explorar el sistema solar de manera interactiva y detallada, enfocado en ofrecer una experiencia educativa en astronomía.",
-      "repositorio_url": "https://github.com/IxyzDev/BeyondTheScope",
-      "imagen": "/assets/proyectos/2023/beyond_the_scope.png",
-      "fecha_creacion": "2023-12-05T00:00:00.000Z",
-      "tecnologias": ["Realidad Virtual", "Astronomía", "Educación"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Educación", "Simulador", "Realidad Virtual"],
-      "contribuidores": ["Equipo IxyzDev"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "2",
-      "nombre": "mIArt",
-      "descripcion": "Proyecto financiado por DAE UV que explora la convergencia entre la creatividad humana y la inteligencia artificial en la generación de arte. Incluye talleres y concursos de creación artística con IA.",
-      "repositorio_url": "https://github.com/Travroz/mIArt",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2023-11-27T00:00:00.000Z",
-      "tecnologias": ["Arte Digital", "Inteligencia Artificial", "Educación"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Arte", "IA", "Educación"],
-      "contribuidores": ["Travroz"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "3",
-      "nombre": "LAB MERCH",
-      "descripcion": "Proyecto de fabricación de productos personalizados mediante tecnologías de impresión 3D, corte láser y prototipado. Se destaca por su enfoque en la calidad y la personalización.",
-      "repositorio_url": "https://github.com/karbi-cl/LAB-MERCH",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2023-12-06T00:00:00.000Z",
-      "tecnologias": ["Fabricación Digital", "Impresión 3D", "Corte Láser"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Personalización", "Fabricación", "3D"],
-      "contribuidores": ["Karbi-cl"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "4",
-      "nombre": "EMG Processing in Embedded System",
-      "descripcion": "Proyecto centrado en el procesamiento de señales EMG para aplicaciones en interfaces humano-máquina y control de dispositivos electrónicos mediante actividad muscular, con énfasis en prótesis biónicas avanzadas.",
-      "repositorio_url": "https://github.com/MaximilianoAntonio/emg-processing-in-embedded-system",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2023-07-12T00:00:00.000Z",
-      "tecnologias": [
-        "Electromiografía",
-        "Interacción Humano-Máquina",
-        "Tecnología Biónica"
-      ],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["EMG", "Biónica", "Tecnología"],
-      "contribuidores": ["Maximiliano Antonio"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "5",
-      "nombre": "3D Ortesis Print & Scan Process",
-      "descripcion": "Proyecto para la digitalización y fabricación de órtesis personalizadas mediante escaneo y modelado 3D, optimizando el diseño y la producción accesible de órtesis funcionales.",
-      "repositorio_url": "https://github.com/MaximilianoAntonio/3D-Ortesis-Print-Scan_Process",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2023-09-04T00:00:00.000Z",
-      "tecnologias": ["Escaneo 3D", "Ortesis Personalizadas", "Impresión 3D"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Escaneo", "Impresión 3D", "Ortesis"],
-      "contribuidores": ["Maximiliano Antonio"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "6",
-      "nombre": "Rehabilitación Asistida Robótica para Pacientes Pediátricos",
-      "descripcion": "Proyecto que utiliza impresión 3D para desarrollar accesorios funcionales para robots colaborativos, enfocados en asistir terapias de rehabilitación a distancia para pacientes pediátricos.",
-      "repositorio_url": "https://github.com/TammaraL/Rehabilitacion-asistida-robotica-para-pacientes-pediatricos",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2023-12-07T00:00:00.000Z",
-      "tecnologias": ["Robótica", "Rehabilitación", "Impresión 3D"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Robótica", "Rehabilitación", "Pediatría"],
-      "contribuidores": ["Tammara L."],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
-    },
-    {
-      "id": "7",
-      "nombre": "Find Inside",
-      "descripcion": "Solución innovadora que utiliza tecnología WiFi y microcontroladores ESP32 para localizar dispositivos de valor dentro de instituciones con infraestructura WiFi.",
-      "repositorio_url": "https://github.com/jdiazvalderrama/Find_Inside",
-      "imagen": "https://via.placeholder.com/720x400",
-      "fecha_creacion": "2023-12-04T00:00:00.000Z",
-      "tecnologias": ["Geolocalización", "WiFi", "Hardware"],
-      "estado_proyecto": "En desarrollo",
-      "etiquetas": ["Geolocalización", "Hardware", "ESP32"],
-      "contribuidores": ["J. Díaz Valderrama"],
-      "licencia": "MIT",
-      "redes_sociales": {
-        "twitter": "https://twitter.com/proyecto",
-        "facebook": "https://facebook.com/proyecto"
-      }
+[
+  {
+    "id": "1",
+    "nombre": "Beyond The Scope",
+    "descripcion": "Simulador de realidad virtual que permite explorar el sistema solar de manera interactiva y detallada, enfocado en ofrecer una experiencia educativa en astronomía.",
+    "repositorio_url": "https://github.com/IxyzDev/BeyondTheScope",
+    "imagen": "/assets/proyectos/2023/beyond_the_scope.png",
+    "fecha_creacion": "2023-12-05T00:00:00.000Z",
+    "tecnologias": ["Realidad Virtual", "Astronomía", "Educación"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Educación", "Simulador", "Realidad Virtual"],
+    "contribuyentes": ["Equipo IxyzDev"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
     }
-  ]
-}
+  },
+  {
+    "id": "2",
+    "nombre": "mIArt",
+    "descripcion": "Proyecto financiado por DAE UV que explora la convergencia entre la creatividad humana y la inteligencia artificial en la generación de arte. Incluye talleres y concursos de creación artística con IA.",
+    "repositorio_url": "https://github.com/Travroz/mIArt",
+    "imagen": "/assets/img/proyectos/2023/imagen-miart.webp",
+    "fecha_creacion": "2023-11-27T00:00:00.000Z",
+    "tecnologias": ["Arte Digital", "Inteligencia Artificial", "Educación"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Arte", "IA", "Educación"],
+    "contribuyentes": ["Travroz"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  },
+  {
+    "id": "3",
+    "nombre": "LAB MERCH",
+    "descripcion": "Proyecto de fabricación de productos personalizados mediante tecnologías de impresión 3D, corte láser y prototipado. Se destaca por su enfoque en la calidad y la personalización.",
+    "repositorio_url": "https://github.com/karbi-cl/LAB-MERCH",
+    "imagen": "/assets/img/proyectos/2023/imagen-lab-merch.webp",
+    "fecha_creacion": "2023-12-06T00:00:00.000Z",
+    "tecnologias": ["Fabricación Digital", "Impresión 3D", "Corte Láser"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Personalización", "Fabricación", "3D"],
+    "contribuyentes": ["Karbi-cl"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  },
+  {
+    "id": "4",
+    "nombre": "EMG Processing in Embedded System",
+    "descripcion": "Proyecto centrado en el procesamiento de señales EMG para aplicaciones en interfaces humano-máquina y control de dispositivos electrónicos mediante actividad muscular, con énfasis en prótesis biónicas avanzadas.",
+    "repositorio_url": "https://github.com/MaximilianoAntonio/emg-processing-in-embedded-system",
+    "imagen": "https://via.placeholder.com/720x400",
+    "fecha_creacion": "2023-07-12T00:00:00.000Z",
+    "tecnologias": [
+      "Electromiografía",
+      "Interacción Humano-Máquina",
+      "Tecnología Biónica"
+    ],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["EMG", "Biónica", "Tecnología"],
+    "contribuyentes": ["Maximiliano Antonio"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  },
+  {
+    "id": "5",
+    "nombre": "3D Ortesis Print & Scan Process",
+    "descripcion": "Proyecto para la digitalización y fabricación de órtesis personalizadas mediante escaneo y modelado 3D, optimizando el diseño y la producción accesible de órtesis funcionales.",
+    "repositorio_url": "https://github.com/MaximilianoAntonio/3D-Ortesis-Print-Scan_Process",
+    "imagen": "https://via.placeholder.com/720x400",
+    "fecha_creacion": "2023-09-04T00:00:00.000Z",
+    "tecnologias": ["Escaneo 3D", "Ortesis Personalizadas", "Impresión 3D"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Escaneo", "Impresión 3D", "Ortesis"],
+    "contribuyentes": ["Maximiliano Antonio"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  },
+  {
+    "id": "6",
+    "nombre": "Rehabilitación Asistida Robótica para Pacientes Pediátricos",
+    "descripcion": "Proyecto que utiliza impresión 3D para desarrollar accesorios funcionales para robots colaborativos, enfocados en asistir terapias de rehabilitación a distancia para pacientes pediátricos.",
+    "repositorio_url": "https://github.com/TammaraL/Rehabilitacion-asistida-robotica-para-pacientes-pediatricos",
+    "imagen": "/assets/img/proyectos/2023/imagen-rehabilitacion-asistida.webp",
+    "fecha_creacion": "2023-12-07T00:00:00.000Z",
+    "tecnologias": ["Robótica", "Rehabilitación", "Impresión 3D"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Robótica", "Rehabilitación", "Pediatría"],
+    "contribuyentes": ["Tammara L."],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  },
+  {
+    "id": "7",
+    "nombre": "Find Inside",
+    "descripcion": "Solución innovadora que utiliza tecnología WiFi y microcontroladores ESP32 para localizar dispositivos de valor dentro de instituciones con infraestructura WiFi.",
+    "repositorio_url": "https://github.com/jdiazvalderrama/Find_Inside",
+    "imagen": "/assets/img/proyectos/2023/imagen-find-inside.webp",
+    "fecha_creacion": "2023-12-04T00:00:00.000Z",
+    "tecnologias": ["Geolocalización", "WiFi", "Hardware"],
+    "estado_proyecto": "En desarrollo",
+    "etiquetas": ["Geolocalización", "Hardware", "ESP32"],
+    "contribuyentes": ["J. Díaz Valderrama"],
+    "licencia": "MIT",
+    "redes_sociales": {
+      "twitter": "https://twitter.com/proyecto",
+      "facebook": "https://facebook.com/proyecto"
+    }
+  }
+]
